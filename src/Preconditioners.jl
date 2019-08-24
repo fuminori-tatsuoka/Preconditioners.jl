@@ -21,14 +21,16 @@ end
 include("incompletecholesky.jl")
 include("diagonal.jl")
 include("amg.jl")
+include("sor.jl")
 
-export  CholeskyPreconditioner, 
-        EmptyCholeskyPreconditioner, 
-        DiagonalPreconditioner, 
+export  CholeskyPreconditioner,
+        EmptyCholeskyPreconditioner,
+        DiagonalPreconditioner,
         EmptyDiagonalPreconditioner,
         AMGPreconditioner,
         SmoothedAggregation,
         RugeStuben,
+        SORPreconditioner,
         UpdatePreconditioner!
 
 end # module
